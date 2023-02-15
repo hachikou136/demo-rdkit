@@ -1,7 +1,7 @@
 { pkgs }: {
   deps = [
-    #pkgs.firefox-esr-91
-    #pkgs.firefox-unwrapped
+    pkgs.firefox-unwrapped
+    # pkgs.firefox-esr-102-unwrapped
     pkgs.tmux
     pkgs.vimHugeX
     pkgs.python310Full
