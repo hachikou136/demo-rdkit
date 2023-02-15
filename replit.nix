@@ -1,5 +1,9 @@
 { pkgs }: {
   deps = [
+    #pkgs.firefox-esr-91
+    #pkgs.firefox-unwrapped
+    pkgs.tmux
+    pkgs.vimHugeX
     pkgs.python310Full
     pkgs.replitPackages.prybar-python310
     pkgs.replitPackages.stderred
@@ -13,6 +17,8 @@
       pkgs.glib
       # Needed for matplotlib
       pkgs.xorg.libX11
+      pkgs.xorg.libXrender
+      pkgs.xorg.libXext
     ];
     PYTHONBIN = "${pkgs.python310Full}/bin/python3.10";
     LANG = "en_US.UTF-8";
